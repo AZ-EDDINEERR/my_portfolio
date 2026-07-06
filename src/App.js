@@ -40,7 +40,7 @@ function App() {
             path="*"
             element={
               <div className="min-h-[60vh] flex flex-col items-center justify-center bg-[#070b12] text-white font-mono">
-                <p className="text-cyan-400 text-xs tracking-[0.2em] mb-4">// 404</p>
+                <p className="text-cyan-400 text-xs tracking-[0.2em] mb-4">{" // 404"}</p>
                 <h1 className="text-3xl font-bold mb-2">Page introuvable</h1>
                 <p className="text-slate-400 text-sm">
                   La page que vous cherchez n'existe pas.

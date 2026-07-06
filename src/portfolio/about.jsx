@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CvButton from "./CvButton";
 
 export default function About() {
   return (
@@ -50,9 +51,7 @@ export default function About() {
             Voir mes projets
             <span>→</span>
           </Link>
-          <Link to='/contact' className="border border-white/15 text-sm px-6 py-3 rounded-md hover:border-cyan-400 hover:text-cyan-400 transition-colors">
-            Me contacter
-          </Link>
+           <CvButton />
         </div>
       </main>
 
@@ -85,7 +84,7 @@ export default function About() {
               </svg>
             </a>
           </div>
-        <span className="text-xs text-slate-500 tracking-widest">v2026.06</span>
+        <span className="text-xs text-slate-500 tracking-widest">AZ-EDDINE ERRAHMAOUI</span>
       </div>
     </div>
   );

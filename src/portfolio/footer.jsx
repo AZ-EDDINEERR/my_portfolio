@@ -86,8 +86,8 @@ export default function Footer() {
       </div>
 
       <div className="mt-12 pt-6 border-t border-white/10 flex flex-wrap items-center justify-between gap-4 text-xs text-slate-500 tracking-widest">
-        <span>&copy; {year} DEV Portfolio. Tous droits réservés.</span>
-        <span>v2026.06</span>
+        <span>&copy; {year} AZ-EDDINE ERRAHMAOUI. Tous droits réservés.</span>
+        <span>AZ-EDDINE ERRAHMAOUI</span>
       </div>
     </footer>
   );

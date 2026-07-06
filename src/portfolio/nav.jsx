@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 const links = [
-  { label: "ABOUT", to: "/about" },
+  { label: "ABOUT", to: "/" },
+  { label: "À PROPOS", to: "/a-propos" },
   { label: "SKILLS", to: "/skills" },
   { label: "PROJECTS", to: "/projects" },
   { label: "FORMATION", to: "/formation" },
@@ -28,7 +29,7 @@ export default function Navbar() {
         <ul className="hidden md:flex items-center gap-8 text-xs tracking-widest text-slate-300">
           {links.map((link) => (
             <li key={link.label}>
-              <NavLink to={link.to} className={linkClass}>
+              <NavLink to={link.to} end={link.to === "/"} className={linkClass}>
                 {({ isActive }) => (
                   <>
                     {isActive && <span>{'>'}</span>}
@@ -66,7 +67,12 @@ export default function Navbar() {
           <ul className="flex flex-col gap-4 pt-6 text-xs tracking-widest text-slate-300">
             {links.map((link) => (
               <li key={link.label}>
-                <NavLink to={link.to} className={linkClass} onClick={() => setOpen(false)}>
+                <NavLink
+                  to={link.to}
+                  end={link.to === "/"}
+                  className={linkClass}
+                  onClick={() => setOpen(false)}
+                >
                   {({ isActive }) => (
                     <>
                       {isActive && <span>›</span>}
@@ -78,7 +84,7 @@ export default function Navbar() {
             ))}
           </ul>
           <a
-            href="mailto:dev@portfolio.fr"
+            href="mailto:azeddineerrahmaoui2@gmail.com"
             className="mt-6 w-full flex items-center justify-center gap-2 border border-white/15 rounded-md px-4 py-2 text-xs tracking-widest hover:border-cyan-400 hover:text-cyan-400 transition-colors"
           >
             <span>&gt;_</span>

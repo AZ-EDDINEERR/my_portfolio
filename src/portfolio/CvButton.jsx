@@ -1,5 +1,5 @@
 import React from "react";
-const CV_PATH = "/cv/CV-Prenom-Nom.pdf";
+const CV_PATH = "/cv/MonCV.pdf";
 
 export default function CvButton({ className = "" }) {
   return (

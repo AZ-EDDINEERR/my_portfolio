@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Propos() {
   return (
-    <section className="bg-[#070b12] text-white font-mono px-8 md:px-16 py-24">
+    <section className="bg-[#070b12] text-white font-mono px-8 md:px-16 py-0">
       <div className="max-w-6xl mx-auto">
         <p className="text-cyan-400 text-xs tracking-[0.2em] mb-12 text-center md:text-left">
           {" // 01 — À PROPOS"}

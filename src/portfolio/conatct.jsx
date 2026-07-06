@@ -15,7 +15,7 @@ export default function ContactSection() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    {"// Remplace par ton propre appel API / service d'envoi d'email"}
+    // Remplace par ton propre appel API / service d'envoi d'email
     console.log("Message envoyé :", form);
     setSent(true);
     setTimeout(() => setSent(false), 3000);
@@ -24,7 +24,7 @@ export default function ContactSection() {
   return (
     <section className="bg-[#070b12] text-white font-mono px-8 md:px-16 py-24">
       <p className="text-cyan-400 text-xs tracking-[0.2em] mb-3">
-       {" // 05 — CONTACT"}
+        {" // 05 — CONTACT"}
       </p>
       <h2 className="font-bold text-3xl md:text-4xl">Travaillons ensemble</h2>
       <p className="mt-4 text-slate-400 text-sm md:text-base max-w-xl">

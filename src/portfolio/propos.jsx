@@ -5,7 +5,7 @@ export default function Propos() {
     <section className="bg-[#070b12] text-white font-mono px-8 md:px-16 py-24">
       <div className="max-w-6xl mx-auto">
         <p className="text-cyan-400 text-xs tracking-[0.2em] mb-12 text-center md:text-left">
-          // 01 — À PROPOS
+          {" // 01 — À PROPOS"}
         </p>
 
         <div className="grid md:grid-cols-2 gap-16 items-center">

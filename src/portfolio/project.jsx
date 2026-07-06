@@ -67,7 +67,7 @@ export default function ProjectsSection() {
       {/* CONTENT */}
       <section className="px-8 md:px-16 py-20">
         <p className="text-cyan-400 text-xs tracking-[0.2em] mb-3">
-          // 03 — PROJETS
+          {" // 03 — PROJETS"}
         </p>
         <h2 className="font-bold text-3xl md:text-4xl mb-12">Réalisations récentes</h2>
 

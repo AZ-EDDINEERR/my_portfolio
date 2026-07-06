@@ -19,7 +19,7 @@ export default function About() {
       {/* HERO CONTENT */}
       <main className="relative z-10 flex-1 flex flex-col items-center justify-center text-center px-8 md:px-16 max-w-4xl mx-auto">
         <p className="text-cyan-400 text-xs tracking-[0.2em] mb-6">
-          // FULL-STACK DEVELOPER
+         {" // FULL-STACK DEVELOPER"}
         </p>
 
         <h1 className="font-bold leading-[0.95] tracking-tight">

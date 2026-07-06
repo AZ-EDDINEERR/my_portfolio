@@ -43,7 +43,7 @@ export default function SkillsSection() {
       <div className="flex flex-wrap items-center justify-between gap-6 mb-12">
         <div>
           <p className="text-cyan-400 text-xs tracking-[0.2em] mb-3">
-            // 02 — COMPÉTENCES
+           {" // 02 — COMPÉTENCES"}
           </p>
           <h2 className="font-bold text-3xl md:text-4xl">Stack technique</h2>
         </div>

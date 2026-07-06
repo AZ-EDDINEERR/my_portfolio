@@ -13,7 +13,6 @@ const projects = [
       "Gestion des candidats et de leurs informations pour le recrutement",
       "Développement d'une API REST avec Laravel et d'une interface utilisateur dynamique avec ReactJS",
     ],
-    live: "#",
     source: "#",
   },
   {
@@ -28,7 +27,6 @@ const projects = [
       "Mise en œuvre d'opérations CRUD, de l'authentification et de la gestion des rôles",
       "Conception de la base de données et développement d'API REST",
     ],
-    live: "#",
     source: "https://github.com/AZ-EDDINEERR/PROJET-DECORATION.git",
   },
   {
@@ -44,20 +42,23 @@ const projects = [
       "Présentation des formations avec une expérience utilisateur optimisée",
       "Déploiement de l'application sur une plateforme d'hébergement cloud",
     ],
-    live: "#",
+    live: "https://react-cours-pro-by-az-eddine.vercel.app/",
     source: "https://github.com/AZ-EDDINEERR/ReactCours-Pro-by-Az-eddine.git",
   },
-  {
+ {
     index: "_04",
-    title: "Application de Gestion des Rendez-vous Médicaux",
-    tags: ["PHP natif", "MySQL"],
+    title: "ErrahmaouiShop — Boutique Électronique en Ligne",
+    image: "bibliotheque_phone.png",
+    tags: ["ReactJS", "Context API", "React Router", "CSS",'Bootstrap'],
     features: [
-      "Prise de rendez-vous en ligne pour les patients",
-      "Gestion des disponibilités des médecins",
-      "Suivi de l'historique des consultations",
+      "Vente en ligne de téléphones, tablettes, PC et appareils photo",
+      "Gestion du panier d'achat avec ajout, suppression et mise à jour des quantités",
+      "Gestion des favoris pour sauvegarder les produits préférés",
+      "Navigation par catégories de produits",
+      "Gestion de l'état global de l'application (panier, favoris) avec Context API",
+      "Développement entièrement en ReactJS, sans backend externe",
     ],
-    live: "#",
-    source: "https://github.com/AZ-EDDINEERR/PROJET-MEDICAL.git",
+    source: "https://github.com/AZ-EDDINEERR/Biblioth-queT-l-phones.git",
   },
 ];
 
@@ -120,12 +121,12 @@ export default function ProjectsSection() {
                 </div>
 
                 <div className="mt-6 pt-4 border-t border-white/10 flex items-center gap-6 text-xs text-slate-400">
-                  <a
+                  {p.live ? <a
                     href={p.live}
                     className="flex items-center gap-1 hover:text-cyan-400 transition-colors"
                   >
                     <span>↗</span> Live
-                  </a>
+                  </a>:''}
                   <a
                     href={p.source}
                     className="flex items-center gap-1 hover:text-cyan-400 transition-colors"
